@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>信贷-客户</title>
+  <link href="css/link1.css" media="screen" rel="Stylesheet" type="text/css">
+
+  
+<script language="javascript" src="js/cal2.js"></script>
+<script language="javascript" src="js/cal_conf2.js"></script>
+<script language="javascript" src="js/sanweiyifen.js"></script>
+<script language="JavaScript" src="js/notNull.js" type="text/javascript"></script>
+
+
+<script language="javascript" type="text/javascript">var boardxml='',ISAPI_ReWrite = 0,forum_picurl='skins/spring2009/';</script>
+
+</head><body>
+	
+	<form action="servlet/InputSdkhxxServlet" method="post" name="sampleform">
+	<div id="frame">
+		<div id="header">
+			<div id="signoutlink">
+				
+					<span>Welcome!</span>|<a href="http://192.168.1.20:8085/logout">退出登录!</a>	
+				
+			</div>
+			<h1>信贷管理信息系统  <span id="module">- 客户信息</span></h1>
+			
+				<div id="navibar">
+					<ul>
+						<li><a href="lrfpb.html">利润分配表</a></li>				
+						<li><a href="xjllb.html">现金流量表</a></li>
+						<li><a href="http://192.168.1.20:8085/customers">信用等级评定</a></li>
+						<li class="current_tab"><a href="sdkhxx.html">双大客户信息</a></li>
+					</ul>
+				</div>
+			
+		</div>
+		<div id="workspace">
+			<h2 id="lrfpb">双大客户信息</h2>
+			<table>
+				<tr>
+					<td>客户名称:</td>
+ 					<td>(静态文本)</td>
+ 					<td></td>
+ 					<td>
+			    		<a href="javascript:showCal('Calendar1')">填报日期</a>
+			    	</td>
+			    	<td>
+			    		<input type="text" name="firstinput" size=20 onblur="RegCheck.Value(this.value,'rq');"></td>
+   	 					<td><span id="isok_rq" class="forminfo"></span></td> 
+ 				</tr>
+
+				<tr>
+					<td>产销率：</td>
+					<td><input type="Text" name="cxl" onkeyup="tran(this);if(this.value.length>15){this.value=this.value.slice(0,15)} " onblur="RegCheck.Value(this.value,'cxl');"></td>
+   	 					<td><span id="isok_cxl" class="forminfo"></span></td>
+					<td>固定资产贷款：</td>
+					<td><input type="Text" name="gdzcdk" onkeyup="tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'gdzcdk');"></td>
+   	 					<td><span id="isok_gdzcdk" class="forminfo"></span></td>
+					
+				</tr>
+				
+				<tr>
+					<td>外汇贷款余额：</td>
+					<td><input type="Text" name="whdkye" onkeyup="tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'whdkye');"></td>
+   	 					<td><span id="isok_whdkye" class="forminfo"></span></td>
+					<td>短期外汇贷款余额：</td>
+					<td><input type="Text" name="dqwhdkye" onkeyup="tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'dqwhdkye');"></td>
+   	 					<td><span id="isok_dqwhdkye" class="forminfo"></span></td>
+				</tr>
+				
+				<tr>
+					<td>外汇存款余额: </td>
+					<td><input type="Text" name="whckye" onkeyup="tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'whckye');"></td>
+   	 					<td><span id="isok_whckye" class="forminfo"></span></td>
+					<td>建行外汇存款余额：</td>
+					<td><input type="Text" name="jhwhckye" onkeyup="tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'jhwhckye');"></td>
+   	 					<td><span id="isok_jhwhckye" class="forminfo"></span></td>
+				</tr>
+				
+				<tr>
+					<td>保函余额：</td>
+					<td><input type="Text" name="bhye" value="" onkeyup="tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'bhye');"></td>
+   	 					<td><span id="isok_bhye" class="forminfo"></span></td>
+					<td>银行承兑汇票金额：</td>
+					<td><input type="Text" name="yhcdhpje" onkeyup="tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'yhcdhpje');"></td>
+   	 					<td><span id="isok_yhcdhpje" class="forminfo"></span></td>
+				</tr>
+				
+				<tr>
+					<td>未付信用证余额：</td>
+					<td><input type="Text" name="wfxyzye" onkeyup="tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'wfxyzye');"></td>
+   	 					<td><span id="isok_wfxyzye" class="forminfo"></span></td>
+					<td>建行未付信用证余额：</td>
+					<td><input type="Text" name="jhwfxyzye" onkeyup="tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'jhwfxyzye');"></td>
+   	 					<td><span id="isok_jhwfxyzye" class="forminfo"></span></td>
+				</tr>
+				<tr>
+ 					<td>属总行直接经营客户：</td>
+   					<td><input type="radio" name="jykh"  value="1">是
+       					<input type="radio" name="jykh"  value="0">否</td>
+   					<td>是否为上市公司：</td>
+   					<td><input type="radio" name="ssgs"  value="1">是
+       					<input type="radio" name="ssgs"  value="0">否</td>
+ 				</tr>	
+ 			
+			</table>
+			
+			<center><table>
+    			<tr>
+    				<td align="middle" >
+    					<input type="submit" name="Confirm" value="确定">    			
+    				</td>
+    				<td align="middle" >
+						<input type="reset" name="Save" value="暂存">    			
+    				</td>
+    				<td align="middle" >
+    					<input type="submit" name="Cancel" value="退出">    							</td>
+    		
+    			</tr>
+ 					<input name="checkreg" id="checkreg" value="0" type="hidden">
+			</table>
+			
+			
+		</div>
+		
+		<div id="footer"><p>&copy; 2009 CrossCloud </p></div>
+		
+	</div>
+
+
+</form>
+</body></html>

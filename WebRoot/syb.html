@@ -1,0 +1,245 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>信贷-客户</title>
+  <link href="css/link1.css" media="screen" rel="Stylesheet" type="text/css">
+  
+<script language="javascript" src="js/cal2.js"></script>
+<script language="javascript" src="js/cal_conf2.js"></script>
+<script language="javascript" src="js/sanweiyifen.js"></script>
+</head><body>
+	<form action="servlet/SybServlet" method="post" accept-charset="utf-8" id="sampleform">
+		
+	
+	
+	
+	<div id="frame">
+		<div id="header">
+			<div id="signoutlink">
+				
+					<span>Welcome!</span>|<a href="http://192.168.1.20:8085/logout">退出登录!</a>	
+				
+			</div>
+			<h1>信贷管理信息系统  <span id="module">- 客户信息</span></h1>
+			
+				<div id="navibar">
+					<ul>
+						<li><a href="khrcxx.html">客户日常情况</a></li>				
+						<li><a href="khjkqk.html">客户借款情况</a></li>
+						<li class="current_tab"><a href="syb.hrml">损益表</a></li>
+						<li><a href="zcfzb.html">资产负债表</a></li>
+					</ul>
+				</div>
+			
+		</div>
+		
+		<div id="workspace">
+			<h2 id="lrfpb">损益表</h2>
+			<table>
+				<tr>
+					<td>
+						客户编号
+					</td>
+					<td>
+						<input type="text" name="khbh" value="" id="khbh">
+					</td>
+					<td>
+						<a href="javascript:showCal('Calendar1')">填报日期</a>
+					</td>
+					<td>
+						<input type="text" name="firstinput" size=20>
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						客户名称
+					</td>
+					<td colspan="3">
+						<input type="text" name="khmc" >
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+
+   	 			
+			
+				<tr>
+					<td>
+						产品销售收入
+					</td>
+					<td>
+						<input type="text" name="xssr" >
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						产品销售成本
+					</td>
+					<td>
+						<input type="text" name="xscb" >
+					</td>
+					<td>
+						其他业务利润
+					</td>
+					<td>
+						<input type="text" name="qtywlr" >
+					</td>
+				</tr>
+				<tr>
+					<td>
+						产品销售费用
+					</td>
+					<td>
+						<input type="text" name="xsfy" >
+					</td>
+					<td>
+						管理费用
+					</td>
+					<td>
+						<input type="text" name="glfy" >
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						产品销售税金及附加
+					</td>
+					<td>
+						<input type="text" name="xssj" >
+					</td>
+					<td>
+						财务费用
+					</td>
+					<td>
+						<input type="text" name="cwfy" >
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						产品销售利润
+					</td>
+					<td>
+						<input type="text" name="xslr" >
+					</td>
+					<td>
+						营业利润
+					</td>
+					<td>
+						<input type="text" name="yelr" >
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						投资收益
+					</td>
+					<td>
+						<input type="text" name="tzly" >
+					</td>
+					<td>
+						营业外收入
+					</td>
+					<td>
+						<input type="text" name="yewsr" >
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						补贴收入
+					</td>
+					<td>
+						<input type="text" name="btsr" >
+					</td>
+					<td>
+						营业外支出
+					</td>
+					<td>
+						<input type="text" name="yewzc" >
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						以前年度损益调整
+					</td>
+					<td>
+						<input type="text" name="a" >
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						利润总额
+					</td>
+					<td>
+						<input type="text" name="lrze" >
+					</td>
+			
+				</tr>
+				<tr>
+					<td>
+						所得税
+					</td>
+					<td>
+						<input type="text" name="sds" >
+					</td>
+					<td>
+						少数股东本期收益
+					</td>
+					<td>
+						<input type="text" name="sytz" >
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						净利润
+					</td>
+					<td>
+						<input type="text" name="jlr" >
+					</td>
+					
+					
+				</tr>
+			</table>
+			
+			<center><table>
+    			<tr>
+		    		<td align="middle" >
+		    			<input type="submit" name="Confirm" value="确定">    			
+		    		</td>
+		    		<td align="middle" >
+		
+		    			<input type="reset" name="Save" value="暂存">    			
+		    		</td>
+		    		<td align="middle" >
+		    			<input type="submit" name="Cancel" value="退出">    			
+		    		</td>
+    		
+    			</tr>
+				
+				
+				
+   	 			
+			</table>
+			
+			
+
+		</div>
+		
+		<div id="footer"><p>&copy; 2009 CrossCloud </p></div>
+		
+	</div>
+
+
+</form>
+
+</body></html>

@@ -1,0 +1,137 @@
+
+body{
+	margin:0px;
+	padding:10px;
+	background-color:rgb(182,12,7);
+    color: rgb(96,0,0);
+}            /*body内红色大背景的设置*/
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+} /*工作区内的字体样式*/
+
+
+
+#lrfpb{text-align:center;} /*使工作区内的表的标题名居中*/
+
+
+
+
+div#frame{
+	border:solid 2px black;
+	background-color:white;
+	padding:0px;
+}                            /*最外层边框设置*/
+
+div#frame div#header{
+	background-color:rgb(96,0,0);
+	margin:1px;
+	padding:1px;            /*header标题框设置*/
+}
+div#frame div#header h1{
+	margin:0px;
+	padding:20px;
+	color:white;
+}                          /*”信贷管理信息系统“这几个字的设置*/
+
+div#frame div#header h1 #module{
+	font-size:13px;
+	color:rgb(255,183,111);
+}                           /*"客户信息"这几个小字的设置*/
+
+div#frame div#header div#signoutlink{
+	padding:8px 0px 8px 8px;
+	margin:0px;
+	float:right;
+	color:white;
+}                          /*右上角”|“的设置*/
+
+div#frame div#header div#signoutlink a, div#frame div#header div#signoutlink span{
+	color:white;
+	margin:5px;
+	padding:8px;
+}                           /*右上角”welcome“的设置*/
+
+
+
+div#frame div#navibar{
+	background-color:rgb(96,0,0);
+	margin:0px 1px 0px 1px;
+	padding:1px;
+
+}            /*标题下方录入表的选择框外的设置*/
+
+div#frame div#navibar ul{
+	background-color:rgb(96,0,0);
+	height:28px;
+	margin:0px 0px 0px 14px;
+	padding:0px;
+
+}	     /*标题下方录入表的选择框内的设置*/
+
+div#frame div#navibar ul li{
+	list-style:none;
+}            
+
+div#frame div#navibar ul li a{
+	background-color:rgb(255,183,111);	
+	float:left;
+	margin:2px;
+	color:black;
+	font-weight:bold;
+	padding:5px;	
+	text-decoration:none;
+}         /*录入表选择框内字体等的设置*/
+
+div#frame div#header div#navibar ul li.current_tab a{
+	background-color:rgb(255,227,200);
+	color:#777;
+	float:left;
+	padding:5px;
+	margin:2px;
+	font-weight:bold;
+	text-decoration:none;
+}       /*当前录入表选择框的设置*/
+
+div#frame div#header div#navibar ul li  a:hover{
+	background-color:rgb(255,135,15);	
+	color:white;	
+}     /*鼠标飘过录入表选择框的设置*/  
+
+
+div#frame div#workspace{
+	padding:0px 20px;
+	margin:10px 0px;	
+}
+        /*工作区边框设置*/
+        
+div#frame div#footer{
+	margin:1px;
+	padding:1px 20px;
+	background-color:rgb(255,169,128);
+}             /*脚标的设置*/
+
+td{
+	text-align:right;
+}
+td#d {
+	text-align:center;
+}
+
+input{
+	text-align:right;
+}
+
+
+#zuoduiqi{
+	text-align:left;
+}
+
+#isok_jlr,#isok_yjtzjj,#isok_yygjbk,#isok_ncwfplr,#isok_tqyygj,#isok_dxlylr,#isok_yflr,#isok_rq,#isok_cxl,#isok_gdzcdk,#isok_whdkye,#isok_dqwhdkye,#isok_whckye,#isok_jhwhckye,#isok_bhye,#isok_yhcdhpje,#isok_wfxyzye,#isok_jhwfxyzye,#isok_jtlj,#isok_wxzc,#isok_gdzc,#isok_cscq,#isok_jrsy,#isok_ysxm,#isok_chdjs,#isok_yfxm,#isok_hscq,#isok_csgd,#isok_gmgd,#isok_gmgp,#isok_gmzq,#isok_fxgp,#isok_fxzq,#isok_xqtqy,#isok_zfgl,#isok_chzw,#isok_czhdfy,#isok_rzzl,#isok_hlzs{
+	color:green;
+	font-weight:bold;
+}
+
+

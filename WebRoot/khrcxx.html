@@ -1,0 +1,122 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>信贷-客户</title>
+  <link href="css/link1.css" media="screen" rel="Stylesheet" type="text/css">
+
+<script language="javascript" src="js/cal2.js"></script>
+<script language="javascript" src="js/cal_conf2.js"></script>
+<script language="javascript" src="js/sanweiyifen.js"></script>
+<script language="JavaScript" src="js/notNull.js" type="text/javascript"></script>
+
+
+<script language="javascript" type="text/javascript">var boardxml='',ISAPI_ReWrite = 0,forum_picurl='skins/spring2009/';</script>
+</head><body>
+	<form action="servlet/KhrcxxServlet" method="post" accept-charset="utf-8" id="sampleform">
+		
+	
+	
+	
+	<div id="frame">
+		<div id="header">
+			<div id="signoutlink">
+				
+					<span>Welcome!</span>|<a href="http://192.168.1.20:8085/logout">退出登录!</a>	
+				
+			</div>
+			<h1>信贷管理信息系统  <span id="module">- 客户信息</span></h1>
+			
+				<div id="navibar">
+					<ul>
+						<li class="current_tab"><a href="khrcxx.html">客户日常情况</a></li>				
+						<li><a href="khjkqk.html">客户借款情况</a></li>
+						<li><a href="syb.html">损益表</a></li>
+						<li><a href="zcfzb.html">资产负债表</a></li>
+					</ul>
+				</div>
+			
+		</div>
+		<div id="workspace">
+			<h2 id="lrfpb">客户日常情况</h2>
+			<table>
+				
+				<tr>
+    				<td>
+    				客户编号
+    				</td>
+    				<td>
+    				静态文本
+			    	</td>
+			    	
+   				</tr>	
+    
+   				<tr>
+    				<td>
+    				客户名称
+			    	</td>
+			    	<td>静态文本</td>
+    			</tr>
+ 
+
+    			<tr>
+			    	<td>
+			    <a href="javascript:showCal('Calendar2')">检查日期</a>
+			    	</td>
+			    	<td>
+			    		<input type="text" name="secondinput" size=20>
+			    	</td>
+    			</tr>
+    			
+    			<tr>
+			    	<td>
+			    		在建行存款余额
+			    	</td>
+			    	<td>
+			    		<input type="text" name="f11jhck" onblur="RegCheck.Value(this.value,'f11jhck');">
+			    	</td>
+					<td><span id="isok_jlr" class="forminfo"></span></td>
+			      	<td>
+			    		或有负债总额
+			    	</td>
+			    	<td>
+			    		<input type="text" name="f11dbje">
+			    	</td>
+   				</tr>
+   				
+    			
+			</table>
+			
+			<center><table>
+    	<tr>
+    		<td align="middle" >
+    			<input type="submit"  value="确定">    			
+    		</td>
+    		<td align="middle" >
+
+    			<input type="reset" name="Save" value="暂存">    			
+    		</td>
+    		<td align="middle" >
+    			<input type="submit" name="Cancel" value="退出">    			
+    		</td>
+    		
+    	</tr>
+				
+				
+				
+   	 			
+			</table>
+			
+			
+
+		</div>
+		
+		<div id="footer"><p>&copy; 2009 CrossCloud </p></div>
+		
+	</div>
+
+</form>
+
+</body></html>

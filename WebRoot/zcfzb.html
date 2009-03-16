@@ -1,0 +1,637 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>信贷-客户</title>
+  <link href="css/link1.css" media="screen" rel="Stylesheet" type="text/css">
+  <script type="text/javascript">
+  	function yingShouZhangKuanJinE(){
+  		alert("应收帐款净额=应收帐款-坏帐准备");
+  	}
+  	function liuDongZiChanHeji(){							alert("流动资产合计=货币资金+短期投资+应收票据+应收帐款净额+预付帐款+应收补贴款+其它应收款+存货+待摊费用+待处理流动资产损失+一年内到期长期债券投资+其它流动资产")
+  	}
+  	function guDingZiChanJinE(){
+  		alert("固定资产净值=固定资产原值-累计折旧")
+  	}
+  	function guDingZiChanHeJi(){
+  		alert("	固定资产合计=固定资产净值+固定资产清理+在建工程清理+在建工程+待处理固定资产净损失")
+  	}
+  	function wuXingDiYanZiChanHeJi(){
+  		alert("无形递延递延资产合计=无形资产+递延资产")
+  	}
+  	function ZiChanHeJi(){
+  		alert("	资产合计=流动资产+固定资产+长期投资+无形及递延资产合计+其它长期资产+递延税款借项")
+  	}
+  	function liuDongFuZhaiHeJi(){
+  		alert("	流动负债合计=短期借款+应付票据+应付帐款+预收帐款+其它应付款+应付工资+应付福利费+未交利润+其它未交款+预提费用+一年内到期长期负债+其它流动负债")
+  	}
+  	function changQiFuZhaiHeJi(){
+  		alert("长期负债合计=长期借款+应付债券+长期应付款+其它长期负债")
+  	}
+  	function fuZhaiHeJi(){
+  		alert("负债合计=流动负债+长期负债")
+  	}
+  	function suoYouZheQuanYiHeJi(){
+  		alert("所有者权益合计=实收资本+资本公积+赢余公积+未分配利润+外币报表折算差额")
+  	}
+  	function fuZhaiJiSuoYouZheQuanYi(){
+  		alert("负债及所有者权益=负债合计+递延税款项+少数股东权益+所有者权益")
+  	}
+  </script>
+</head>
+<body>
+	<div id="frame">
+		<div id="header">
+			<div id="signoutlink">
+				
+					<span>Welcome!</span>|<a href="http://192.168.1.20:8085/logout">退出登录!</a>	
+				
+			</div>
+			<h1>信贷管理信息系统  <span id="module">- 客户信息</span></h1>
+			
+				<div id="navibar">
+					<ul>
+						<li><a href="khrcxx.html">客户日常情况</a></li>				
+						<li><a href="khjkqk.html">客户借款情况</a></li>
+						<li><a href="syb.html">损益表</a></li>
+						<li class="current_tab"><a href="zcfzb.html">资产负债表</a></li>
+					</ul>
+				</div>
+			
+		</div>
+		<div id="workspace">
+			<h2 id="lrfpb">资产负债表</h2>
+			<table>
+				<tr>
+					<td>
+						客户编号
+					</td>
+					<td>
+						<input type="text" name="khbh" value="" id="khbh">
+					</td>
+					<td>
+						填报日期
+					</td>
+					<td>
+						<input type="text" name="tbrq" value="" id="tbrq">
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						客户名称
+					</td>
+					<td colspan='3'>
+						<input type="text" name="khmc" value="" id="khmc">
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan='2' id="d">
+						资产
+					</td>
+					<td>
+						&nbsp;
+					</td>
+					<td colspan='2' id="d">
+						负债
+					</td>
+					<td>
+						&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						流动资产：
+					</td>
+					<td>
+						&nbsp;
+					</td>
+					<td colspan='2'>
+						流动负债：
+					</td>
+					<td>
+						&nbsp;
+					</td>
+				</tr>
+				<tr>
+					<td>
+						货币资金
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						短期借款
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						短期投资
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						应付票据
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						应收票据
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						应付账款
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						应收账款
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						预收账款
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						减：坏账准备
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						其它应付款
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" onclick="yingShouZhangKuanJinE()">应受账款净额</a>
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						应付工资
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						预付账款
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						应付福利费
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						应收补贴款
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						未交税金
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						其他应收款
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						未交利润
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						存货
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						其他未交款
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						待摊费用
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						预提费用
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						待处理流动资产损失
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						一年内到期长期负债
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						一年内到期债券投资
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						其它流动负债
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						其它流动资产
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						<a href="#" onclick="liuDongFuZhaiHeJi()">流动负债合计</a>
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" onclick="liuDongZiChanHeji()">流动资产合计</a>
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						长期负债
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						长期投资
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td colspan='2'>
+						长期负债：
+					</td>
+					<td>
+						&nbsp;
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						长期投资：
+					</td>
+					<td>
+						&nbsp;
+					</td>
+					<td>
+						长期借款
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						长期投资
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						应付债券
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						其中：合并价差
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						长期应付款
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						固定资产：固定资产原值
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						其他长期负债
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						减：累计折旧
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						其中：住房周转金
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" onclick="guDingZiChanJinE()">固定资产净值</a>
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						<a href="#" onclick="changQiFuZhaiHeJi()">长期负债合计</a>
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						固定资产清理
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						<a href="#" onclick="fuZhaiHeJi()">负债合计</a>
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						在建工程
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						递延税款贷项
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" onclick="guDingZiChanHeJi()">固定资产合计</a>
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						所有者权益：实收资本
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						无形及递延资产：无形资产
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						资本公积
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						递延资产
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						盈余公积
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" onclick="wuXingDiYanZiChanHeJi()">无形及递延资产合计</a>
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						其中：公益金
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						其他长期资产
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						未分配利润
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&nbsp;
+					</td>
+					<td>
+						&nbsp;
+					</td>
+					<td>
+						外币报表折算差额
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&nbsp;
+					</td>
+					<td>
+						&nbsp;
+					</td>
+					<td>
+						<a href="#" onclick="suoYouZheQuanYiHeJi()">所有者权益合计</a>
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" onclick="ZiChanHeJi()">资产合计</a>
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						<a href="#" onclick="fuZhaiJiSuoYouZheQuanYi()">负债及所有者权益合计</a>
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						表外资料：已贴现的商业承兑汇票
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						融资租入固定资产
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>国家资本
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						法人资本
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						外商资本
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+					<td>
+						个人资本
+					</td>
+					<td>
+						<input type="text" name="some_name" value="" id="some_name">
+					</td>
+				</tr>
+			</table>
+			
+			<center><table>
+    			<tr>
+    				<td align="middle" >
+    					<input type="submit" name="Confirm" value="确定">    			
+    				</td>
+    				<td align="middle" >
+						<input type="reset" name="Save" value="暂存">    			
+    				</td>
+    				<td align="middle" >
+    					<input type="submit" name="Cancel" value="退出">    							</td>
+    		
+    			</tr>
+					
+			</table>
+			
+			
+		</div>
+		
+		<div id="footer"><p>&copy; 2009 CrossCloud </p></div>
+		
+	</div>
+
+
+
+</body></html>

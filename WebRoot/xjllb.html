@@ -1,0 +1,436 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>信贷-客户</title>
+  <link href="css/link1.css" media="screen" rel="Stylesheet" type="text/css">
+<script language="javascript" src="js/cal2.js"></script>
+<script language="javascript" src="js/cal_conf2.js"></script>
+<script language="javascript" src="js/sanweiyifen.js"></script>
+<script language="JavaScript" src="js/notNull.js" type="text/javascript"></script>
+  
+<script language="javascript" type="text/javascript">var boardxml='',ISAPI_ReWrite = 0,forum_picurl='skins/spring2009/';</script>
+
+<script type="text/javascript">
+
+function startCalc(){
+  interval = setInterval("calc()",1);
+}
+function calc(){
+  jlrr = document.sampleform.jlr.value;
+  jtljj = document.sampleform.jtlj.value; 
+  wxzcc = document.sampleform.wxzc.value;
+  gdzcc = document.sampleform.gdzc.value;
+  cscqq = document.sampleform.cscq.value;
+  jrsyy = document.sampleform.jrsy.value; 
+  ysxmm = document.sampleform.ysxm.value;
+  chdjss = document.sampleform.chdjs.value;
+  yfxmm = document.sampleform.yfxm.value;
+  jlr1 = untran(jlrr);
+  jtlj1 = untran(jtljj);
+  wxzc1 = untran(wxzcc);
+  gdzc1 = untran(gdzcc);
+  cscq1 = untran(cscqq);
+  jrsy1 = untran(jrsyy);
+  ysxm1 = untran(ysxmm);
+  chdjs1 = untran(chdjss);
+  yfxm1 = untran(yfxmm);
+  
+  document.sampleform.jyhd.value = (jlr1 * 1) + (jtlj1 * 1) + (wxzc1 * 1) + (gdzc1 * 1) + (cscq1  * 1) + (jrsy1 * 1) + (ysxm1 * 1) + (chdjs1 * 1) + (yfxm1 * 1);
+  tran(document.sampleform.jyhd);
+  
+  
+  hscqq = document.sampleform.hscq.value;
+  csgdd = document.sampleform.csgd.value; 
+  gmgdd = document.sampleform.gmgd.value;
+  gmgpp = document.sampleform.gmgp.value;
+  gmzqq = document.sampleform.gmzq.value;
+  hscq1 = untran(hscqq);
+  csgd1 = untran(csgdd);
+  gmgd1 = untran(gmgdd);
+  gmgp1 = untran(gmgpp);
+  gmzq1 = untran(gmzqq);
+  
+  document.sampleform.tzcs.value = (hscq1 * 1) + (csgd1 * 1) + (gmgd1 * 1) + (gmgp1 * 1) + (gmzq1  * 1);
+  tran(document.sampleform.tzcs);  
+  
+
+
+  fxgpp = document.sampleform.fxgp.value;
+  fxzqq = document.sampleform.fxzq.value; 
+  xqtqyy = document.sampleform.xqtqy.value;
+  zfgll = document.sampleform.zfgl.value;
+  chzww = document.sampleform.chzw.value;
+  czhdfyy = document.sampleform.czhdfy.value; 
+  rzzll = document.sampleform.rzzl.value;
+  fxgp1 = untran(fxgpp);
+  fxzq1 = untran(fxzqq);
+  xqtqy1 = untran(xqtqyy);
+  zfgl1 = untran(zfgll);
+  chzw1 = untran(chzww);
+  czhdfy1 = untran(czhdfyy);
+  rzzl1 = untran(rzzll);
+  
+  document.sampleform.czhdje.value = (fxgp1 * 1) + (fxzq1 * 1) + (xqtqy1 * 1) + (zfgl1 * 1) + (chzw1  * 1) + (czhdfy1 * 1) + (rzzl1 * 1);
+  tran(document.sampleform.czhdje);
+
+
+  jyhdd = document.sampleform.jyhd.value;
+  tzcss = document.sampleform.tzcs.value; 
+  czhdjee = document.sampleform.czhdje.value;
+  hlzss = document.sampleform.hlzs.value;
+  jyhd1 = untran(jyhdd);
+  tzcs1 = untran(tzcss);
+  czhdje1 = untran(czhdjee);
+  hlzs1 = untran(hlzss);
+  
+  document.sampleform.xjll.value = (jyhd1 * 1) + (tzcs1 * 1) + (czhdje1 * 1) + (hlzs1 * 1);
+  tran(document.sampleform.xjll);  
+ 
+
+}
+function stopCalc(){
+  clearInterval(interval);
+}
+
+
+
+</script>
+
+
+</head><body>
+	
+<form action="servlet/InputXjllbServlet" method="post" name="sampleform">
+
+    <div id="frame">
+        <div id="header">
+            <div id="signoutlink">
+                
+                    <span>Welcome!</span>|<a href="http://192.168.1.20:8085/logout">退出登录!</a>   
+                
+            </div>
+            <h1>信贷管理信息系统  <span id="module">- 客户信息</span></h1>
+            
+                <div id="navibar">
+                    <ul>
+                        <li><a href="lrfpb.html">利润分配表</a></li>             
+                        <li class="current_tab"><a href="xjllb.html">现金流量表</a></li>
+                        <li><a href="http://192.168.1.20:8085/customers">信用等级评定</a></li>
+                        <li><a href="sdkhxx.html">双大客户信息</a></li>
+                    </ul>
+                </div>
+            
+        </div>
+        <div id="workspace">
+            <h2 id="lrfpb">现金流量表</h2>
+            <table>
+                
+                <tr>
+                    <td>
+            
+                        客户编号
+                    </td>
+                    <td>
+                        (静态文本)
+                    </td>
+                    <td></td>
+			    	<td>
+			    		<a href="javascript:showCal('Calendar1')">填报日期</a>
+			    	</td>
+			    	<td>
+			    		<input type="text" name="firstinput" size=20 id="zuoduiqi" onblur="RegCheck.Value(this.value,'rq');"></td>
+   	 					<td><span id="isok_rq" class="forminfo"></span></td> 
+                </tr>
+                
+                <tr>
+                    <td>
+                        客户名称
+                    </td>
+                    <td>(静态文本)</td>
+                </tr>
+                <tr><td>&nbsp</td></tr>
+
+                <tr>
+                    <td>
+                        净利润
+                    </td>
+                    <td>
+                        <input type="text" name="jlr" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'jlr');"></td>
+   	 					<td><span id="isok_jlr" class="forminfo"></span></td>
+                    </td>
+            
+                    <td>
+                        计提累计折旧
+                    </td>
+                    <td>
+                        <input type="Text" name="jtlj" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'jtlj');"></td>
+   	 					<td><span id="isok_jtlj" class="forminfo"></span></td>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+            
+                        无形资产摊销
+                    </td>
+                    <td>
+                        <input type="text" name="wxzc" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'wxzc');"></td>
+   	 					<td><span id="isok_wxzc" class="forminfo"></span></td>
+                    </td>
+                    <td>
+                        固定资产报废损失
+                    </td>
+                    <td>
+                        <input type="text" name="gdzc" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'gdzc');"></td>
+   	 					<td><span id="isok_gdzc" class="forminfo"></span></td>
+            
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        出售长期资产的损失
+                    </td>
+                    <td>
+                        <input type="text" name="cscq" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'cscq');"></td>
+   	 					<td><span id="isok_cscq" class="forminfo"></span></td>
+                    </td>
+    
+                    <td>
+                        计入损益的长期借款利息
+                    </td>
+                    <td>
+                        <input type="text" name="jrsy" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'jrsy');"></td>
+   	 					<td><span id="isok_jrsy" class="forminfo"></span></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+            
+                        应收项目净额的减少
+                    </td>
+                    <td>
+                        <input type="text" name="ysxm" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'ysxm');"></td>
+   	 					<td><span id="isok_ysxm" class="forminfo"></span></td>
+                    </td>
+                    <td>
+                        存货的减少
+                    </td>
+                    <td>
+                        <input type="text" name="chdjs" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'chdjs');"></td>
+   	 					<td><span id="isok_chdjs" class="forminfo"></span></td>
+            
+                    </td>
+                </tr>
+  
+                <tr>
+                    <td>
+                        应付项目的增加
+                    </td>
+                    <td>
+                        <input type="text" name="yfxm" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'yfxm');"></td>
+   	 					<td><span id="isok_yfxm" class="forminfo"></span></td>
+            
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        经营活动产生现金净额
+                    </td>
+                    <td>
+                        <input type="text" name="jyhd" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" ></td>
+   	 					<td></td>
+            
+                    </td>
+                </tr>
+                <tr><td>&nbsp</td></tr>
+
+                <tr>
+                    <td>
+                        回收长期资产取得的现金
+                    </td>
+                    <td>
+                        <input type="text" name="hscq" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'hscq');"></td>
+   	 					<td><span id="isok_hscq" class="forminfo"></span></td>
+                    </td>
+            
+                    <td>
+                        出售固定资产回收的现金
+                    </td>
+                    <td>
+                        <input type="text" name="csgd" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'csgd');"></td>
+   	 					<td><span id="isok_csgd" class="forminfo"></span></td>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+            
+                        购买固定资产支付的现金
+                    </td>
+                    <td>
+                        <input type="text" name="gmgd" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'gmgd');"></td>
+   	 					<td><span id="isok_gmgd" class="forminfo"></span></td>
+                    </td>
+                    <td>
+                        购买股票支付的现金
+                    </td>
+                    <td>
+                        <input type="text" name="gmgp" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'gmgp');"></td>
+   	 					<td><span id="isok_gmgp" class="forminfo"></span></td>
+            
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> 
+                        购买债券支付的现金 
+                    </td>
+                    <td>
+                        <input type="text" name="gmzq" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'gmzq');"></td>
+   	 					<td><span id="isok_gmzq" class="forminfo"></span></td>
+            
+                    </td>
+                </tr>   
+                 
+                <tr>
+                    <td>
+                        投资产生的现金流动净额
+                    </td>
+                    <td>
+                        <input type="text" name="tzcs" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}"> </td>
+   	 					<td></td>
+            
+                    </td>
+                </tr>
+                <tr><td>&nbsp</td></tr>
+
+    
+                <tr>
+                    <td>
+                        发行股票收到的现金
+                    </td>
+                    <td>
+                        <input type="text" name="fxgp" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'fxgp');"></td>
+   	 					<td><span id="isok_fxgp" class="forminfo"></span></td>
+                    </td>
+            
+                    <td>
+                        发行债券收到的现金
+                    </td>
+                    
+                    <td>
+                        <input type="text" name="fxzq" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'fxzq');"></td>
+   	 					<td><span id="isok_fxzq" class="forminfo"></span></td>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        向其他企业借款收到的现金
+                    </td>
+                    <td>
+                        <input type="text" name="xqtqy" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'xqtqy');"></td>
+   	 					<td><span id="isok_xqtqy" class="forminfo"></span></td>
+                    </td>
+            
+                    <td>
+                        支付股利收到的现金
+                    </td>
+                    
+                    <td>
+                        <input type="text" name="zfgl" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'zfgl');"></td>
+   	 					<td><span id="isok_zfgl" class="forminfo"></span></td>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+            
+                        偿还债务付出的现金
+                    </td>
+                    <td>
+                        <input type="text" name="chzw" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'chzw');"></td>
+   	 					<td><span id="isok_chzw" class="forminfo"></span></td>
+                    </td>
+                    <td>
+                        筹资活动所使用的费用
+                    </td>
+                    <td>
+                        <input type="text" name="czhdfy" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'czhdfy');"></td>
+   	 					<td><span id="isok_czhdfy" class="forminfo"></span></td>
+            
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> 
+                        融资租赁固定资产支付费用 
+                    </td>
+                    <td>
+                        <input type="text" name="rzzl" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'rzzl');"></td>
+   	 					<td><span id="isok_rzzl" class="forminfo"></span></td>
+            
+                    </td>
+                </tr>    
+                
+                <tr>
+                    <td> 
+                                筹资活动产生的现金净额 
+                    </td>
+                    <td>
+                        <input type="text" name="czhdje" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}"></td>
+   	 					<td></td>
+            
+                    </td>
+                </tr>
+                <tr><td>&nbsp</td></tr>
+                
+                <tr>
+                    <td> 
+                                汇率折算差额 
+                    </td>
+                    <td>
+                        <input type="text" name="hlzs" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'hlzs');"></td>
+   	 					<td><span id="isok_hlzs" class="forminfo"></span></td>
+            
+                    </td>
+                </tr>   
+                 
+                <tr>
+                    <td> 
+                                现金流量净增加额
+                    </td>
+                    <td>
+                        <input type="text" name="xjll" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}"></td>
+   	 					<td></td>
+            
+                    </td>
+                </tr>
+        </table>
+    <center><table>
+        <tr>
+            <td align="middle" >
+                <input type="submit" name="Confirm" value="确定">             
+            </td>
+            
+        </tr>
+                
+               	<input name="checkreg" id="checkreg" value="0" type="hidden">	 
+                
+                
+            </table>
+
+        </div>
+        
+        <div id="footer"><p>&copy; 2009 CrossCloud </p></div>
+        
+    </div>
+
+
+</form>
+
+</body></html>

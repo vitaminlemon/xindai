@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+	
+	
+<html>
+
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+  <title>信贷-客户</title>
+  <link href="css/link1.css" media="screen" rel="Stylesheet" type="text/css">
+<script language="javascript" src="js/cal2.js"></script>
+<script language="javascript" src="js/cal_conf2.js"></script>
+<script language="javascript" src="js/sanweiyifen.js"></script>
+<script language="JavaScript" src="js/notNull.js" type="text/javascript"></script>
+
+
+<script language="javascript" type="text/javascript">var boardxml='',ISAPI_ReWrite = 0,forum_picurl='skins/spring2009/';</script>
+
+
+<script type="text/javascript">
+
+function startCalc(){
+  interval = setInterval("calc()",1);
+}
+function calc(){
+  jlrr = document.sampleform.jlr.value;
+  yjtzjjj = document.sampleform.yjtzjj.value; 
+  ncwfplrr = document.sampleform.ncwfplr.value;
+  dxlylrr = document.sampleform.dxlylr.value;
+  jlr1 = untran(jlrr);
+  yjtzjj1 = untran(yjtzjjj);
+  ncwfplr1 = untran(ncwfplrr);
+  dxlylr1 = untran(dxlylrr);
+  document.sampleform.kgfplr.value = (jlr1  * 1) - (yjtzjj1 * 1) + (ncwfplr1 * 1) - (dxlylr1 * 1);
+  tran(document.sampleform.kgfplr);
+  
+  
+  
+   kgfplrr = document.sampleform.kgfplr.value;
+  yygjbkk = document.sampleform.yygjbk.value; 
+  tqyygjj = document.sampleform.tqyygj.value;
+  yflrr = document.sampleform.yflr.value;
+  
+  kgfplr1 = untran(kgfplrr);
+  yygjbk1 = untran(yygjbkk);
+  tqyygj1 = untran(tqyygjj);
+  yflr1 = untran(yflrr);
+  
+ document.sampleform.wfplr.value =(kgfplr1 * 1) + (yygjbk1 * 1) - (tqyygj1 * 1) - (yflr1 * 1);
+  tran(document.sampleform.wfplr);
+}
+function stopCalc(){
+  clearInterval(interval);
+}
+
+
+
+</script>
+
+
+</head><body>
+		
+
+	<form action="servlet/InputLrfpbServlet" method="post" name="sampleform">
+	<div id="frame">
+		<div id="header">
+			<div id="signoutlink">
+				
+					<span>Welcome!</span>|<a href="http://192.168.1.20:8085/logout">退出登录!</a>	
+				
+			</div>
+			<h1>信贷管理信息系统  <span id="module">- 客户信息</span></h1>
+			
+				<div id="navibar">
+					<ul>
+						<li class="current_tab"><a href="lrfpb.html">利润分配表</a></li>				
+						<li><a href="xjllb.html">现金流量表</a></li>
+						<li><a href="http://192.168.1.20:8085/customers">信用等级评定</a></li>
+						<li><a href="sdkhxx.html">双大客户信息</a></li>
+					</ul>
+				</div>
+			
+		</div>
+		<div id="workspace">
+			<h2 id="lrfpb">利润分配表</h2>
+			
+			<table>
+				
+				<tr>
+    				<td>
+    				客户编号
+    				</td>
+    				<td>
+    				静态文本
+			    	</td>
+			    	<td></td>
+			    	<td>
+			    		<a href="javascript:showCal('Calendar1')">填报日期</a>
+			    	</td>
+			    	<td>
+			    		<input type="text" name="firstinput" size=20 id="zuoduiqi" onblur="RegCheck.Value(this.value,'rq');"></td>
+   	 					<td><span id="isok_rq" class="forminfo"></span></td> 
+   				</tr>	
+    
+   				<tr>
+    				<td>
+    				客户名称
+		    	</td>
+			    	<td>静态文本</td>
+    			</tr>
+ 
+
+    			<tr>
+			    	<td>
+			    		净利润
+			    	</td>
+			    	<td>
+			    		<input type="text" name="jlr"   onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'jlr');"></td>
+   	 					<td><span id="isok_jlr" class="forminfo"></span></td>
+			    	<td>
+			    		可供分配利润
+			    	</td>
+			    	<td>
+			    		<input type="text" name="kgfplr" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}"></td>
+   	 					<td></td>
+    			</tr>
+    			
+    			<tr>
+			    	<td>
+			    		减：应交特种基金
+			    	</td>
+			    	<td>
+			    		<input type="text" name="yjtzjj" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'yjtzjj');"></td>
+   	 					<td><span id="isok_yjtzjj" class="forminfo"></span>
+			    	</td>
+			      	<td>
+			    		加：赢余公积补亏
+			    	</td>
+			    	<td>
+			    		<input type="text" name="yygjbk" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'yygjbk');"></td>
+   	 					<td><span id="isok_yygjbk" class="forminfo"></span>
+			    	</td>
+   				</tr>
+   				
+    			<tr>
+			    	<td>
+			    		加：年初未分配利润
+			    	</td>
+			    	<td>
+			    		<input type="text" name="ncwfplr" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'ncwfplr');"></td>
+   	 					<td><span id="isok_ncwfplr" class="forminfo"></span>
+			    	</td>
+			    	<td>
+			    		减：提取赢余公积
+			    	</td>
+			    	<td>
+			    		<input type="text" name="tqyygj" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'tqyygj');"></td><td>
+   	 					<span id="isok_tqyygj" class="forminfo"></span> 
+			    	</td>
+				</tr>
+				
+    			<tr>
+			    	<td>
+			    		减：单项留用利润
+			    	</td>
+			    	<td>
+			    		<input type="text" name="dxlylr" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'dxlylr');"></td><td>
+   	 					<span id="isok_dxlylr" class="forminfo"></span>
+			    	</td>
+			    	<td>
+			    		减：应付利润
+			    	</td>
+			    	<td>
+			    		<input type="text" name="yflr" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}" onblur="RegCheck.Value(this.value,'yflr');"></td><td>
+   	 					<span id="isok_yflr" class="forminfo"></span> 
+			    	</td>
+   	 			</tr>
+   	 			<tr>
+   	 				<td>&nbsp</td>
+   	 				<td>&nbsp</td>
+   	 				<td>&nbsp</td>
+   	 				<td>
+   	 					未分配利润
+   	 				</td>
+   	 				<td>
+   	 					<input type="text" name="wfplr" onkeyup="calc();tran(this);if(this.value.length>19){this.value=this.value.slice(0,19)}"></td><td></td>
+   	 			</tr>
+	
+
+	<input name="checkreg" id="checkreg" value="0" type="hidden">	 	 
+ 			
+	 			
+			</table>
+			
+
+			
+			<center><table>
+    	<tr>
+    		<td align="middle" >
+    			<input type="submit" name="Confirm" value="确定">    			
+    		</td>
+	
+    	</tr>
+				
+
+
+				
+   	 			
+			</table>
+			
+			
+	
+		</div>
+		
+		<div id="footer"><p>&copy; 2009 CrossCloud </p></div>
+		
+	</div>
+</form>
+
+</body></html>

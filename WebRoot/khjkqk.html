@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>信贷-客户</title>
+  <link href="css/link1.css" media="screen" rel="Stylesheet" type="text/css">
+</head><body>
+	<div id="frame">
+		<div id="header">
+			<div id="signoutlink">
+				
+					<span>Welcome!</span>|<a href="http://192.168.1.20:8085/logout">退出登录!</a>	
+				
+			</div>
+			<h1>信贷管理信息系统  <span id="module">- 客户信息</span></h1>
+			
+				<div id="navibar">
+					<ul>
+						<li><a href="khrcxx.html">客户日常情况</a></li>				
+						<li class="current_tab"><a href="khjkqk.html">客户借款情况</a></li>
+						<li><a href="syb.html">损益表</a></li>
+						<li><a href="zcfzb.html">资产负债表</a></li>
+					</ul>
+				</div>
+			
+		</div>
+		<div id="workspace">
+			<h2 id="lrfpb">客户借款情况</h2>
+			<table>
+				
+				<tr>
+			    	<td>
+			
+			    		客户全称
+			    	</td>
+			    	<td>
+			    		(静态文本)
+			    	</td>
+    			</tr>
+    			
+  				<tr>
+			    	<td>
+			    		营业执照号
+			    	</td>
+			    	<td>(静态文本)</td>
+    			</tr>
+
+    			<tr>
+			    	<td>
+			    		&nbsp;
+			    	</td>
+    		</table>
+    	
+    		<table>
+    			<tr>
+    				<td>
+    					借款情况总数
+    				</td>
+    				<td>
+    					<input type="text" name="jkqkzs" value="" id="some_name">
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					序号
+    				</td>
+    				<td>
+    					金融机构名称
+    				</td>
+    				<td>
+    					余额
+    				</td>
+    				<td>
+    					其中：不良贷款余额
+    				</td>
+    				<td>
+    					&nbsp;
+    				</td>
+
+    			</tr>
+    			<tr>
+    				<td>
+    					<input type="radio" name="some_name" value="" id="some_name"><a>No.1</a>
+    				</td>
+    				<td>
+    					<input type="text" name="jgmc" value="" id="jgmc">
+    				</td>
+    				<td>
+    					<input type="text" name="ye" value="" id="ye">
+    				</td>
+    				<td>
+    					<input type="text" name="bldk" value="" id="bldk">
+    				</td>
+    				<td>
+    					<input type="submit" name="add" value="增加" id="add">
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					<input type="radio" name="some_name" value="" id="some_name"><a>No.2</a>
+    				</td>
+    				<td>
+    					<input type="text" name="jgmc" value="" id="jgmc">
+    				</td>
+    				<td>
+    					<input type="text" name="ye" value="" id="ye">
+    				</td>
+    				<td>
+    					<input type="text" name="bldk" value="" id="bldk">
+    				</td>
+    				<td>
+    					<input type="submit" name="del" value="删除" id="del">
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					<input type="radio" name="some_name" value="" id="some_name"><a>No.3</a>
+    				</td>
+    				<td>
+    					<input type="text" name="jgmc" value="" id="jgmc">
+    				</td>
+    				<td>
+    					<input type="text" name="ye" value="" id="ye">
+    				</td>
+    				<td>
+    					<input type="text" name="bldk" value="" id="bldk">
+    				</td>
+    				<td>
+    					<input type="submit" name="up" value="上翻" id="up">
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					<input type="radio" name="some_name" value="" id="some_name"><a>No.4</a>
+    				</td>
+    				<td>
+    					<input type="text" name="jgmc" value="" id="jgmc">
+    				</td>
+    				<td>
+    					<input type="text" name="ye" value="" id="ye">
+    				</td>
+    				<td>
+    					<input type="text" name="bldk" value="" id="bldk">
+    				</td>
+    				<td>
+    					<input type="submit" name="down" value="下翻" id="down">
+    				</td>
+    			</tr>
+    			<tr>
+    				<td>
+    					<input type="radio" name="some_name" value="" id="some_name"><a>No.5</a>
+    				</td>
+    				<td>
+    					<input type="text" name="jgmc" value="" id="jgmc">
+    				</td>
+    				<td>
+    					<input type="text" name="ye" value="" id="ye">
+    				</td>
+    				<td>
+    					<input type="text" name="bldk" value="" id="bldk">
+    				</td>
+    				<td>
+    					&nbsp;
+    				</td>
+    			</tr>
+    			<tr>
+    				
+    			</tr>
+    		</table>
+    <center><table>
+    	<tr>
+    		<td align="middle" >
+    			<input type="submit" name="Confirm" value="确定">    			
+    		</td>
+    		<td align="middle" >
+
+    			<input type="reset" name="Save" value="暂存">    			
+    		</td>
+    		<td align="middle" >
+    			<input type="submit" name="Cancel" value="退出">    			
+    		</td>
+    		
+    	</tr>
+				
+				
+				
+   	 			
+			</table>
+
+		</div>
+		
+		<div id="footer"><p>&copy; 2009 CrossCloud </p></div>
+		
+	</div>
+
+
+
+
+</body></html>
